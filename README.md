@@ -28,7 +28,7 @@ This project investigates shopping trends on Instacart focusing on customer beha
 
 ## Visuals  
 ### Time of Day and Day of Week Shopping Trends  
-![Time of Day and Day of Week Shopping Trends](shopping_trends.png)  
+![Time of Day and Day of Week Shopping Trends](dayofweekpeopleshopmost.png)  
 
 ### Top 20 Reordered Products  
 ![Top 20 Reordered Products](top_reorders.png)  
