@@ -33,6 +33,7 @@ This project investigates shopping trends on Instacart focusing on customer beha
 
 ### Top 20 Reordered Products  
 ![Top 20 Reordered Products](top20reordereditems.png)
+### Top 20 Products People Put In Their Cart First  
 ![Top 20 Products People Put In Their Cart First](top20itemsfirst.png)  
 
 ## Tools Used  
