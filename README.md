@@ -1,48 +1,77 @@
-# Instacart Orders Analysis In Python  
+# Instacart Dataset Analysis  
 By James Weaver
 
 ## Introduction  
-This project investigates shopping trends on Instacart focusing on customer behavior, order patterns, and product popularity. Leveraging Python's pandas, matplotlib, and numpy libraries, the analysis provides insights into grocery ordering patterns, including reorder frequencies, popular products, and shopping habits by time and day.
+This project focuses on analyzing Instacart's dataset to gain insights into customer ordering behavior. The primary goal is to clean, explore, and visualize data to identify patterns, trends, and actionable insights that can inform business decisions.  
 
 ## Files  
 1. **instacart_analysis.ipynb**  
-   The main Jupyter Notebook with detailed code for data preprocessing, analysis, and visualizations.  
+   The main Jupyter Notebook containing the code for data cleaning, analysis, and visualizations.  
 2. **instacart_orders.csv**  
-   Contains information about each Instacart order, including order times and frequencies.  
+   Dataset with details about customer orders, including day and time of purchase.  
 3. **products.csv**  
-   Metadata about Instacart products, including names, categories, and IDs.  
-4. **README.md**  
-   Project overview, methodology, and key findings.
+   Metadata about products, including names, aisles, and departments.  
+4. **aisles.csv**  
+   Categorizes products into grocery aisles.  
+5. **departments.csv**  
+   Groups products into larger department categories.  
+6. **order_products.csv**  
+   Links orders to products, showing details like cart order and reorder status.  
+7. **README.md**  
+   Overview of the project, methodology, and key findings.
 
-## Analysis  
-- Examined customer ordering behavior by time and day of the week.  
-- Identified top reordered products and the most frequent first items in carts.  
-- Analyzed the distribution of items per order and customer ordering frequencies.  
-- Visualized trends in product popularity and reorder proportions.
-
-## Key Findings  
-- Most orders are placed between 9 AM and 5 PM, with peak shopping hours varying slightly by day.  
-- The most popular first cart item was "Bananas," appearing frequently across all users.  
-- Customers tend to wait an average of 11 days before placing another order.  
-- The majority of orders contained fewer than 13 items, showing a skew towards smaller purchases.  
-
-## Visuals  
-### Time of Day and Day of Week Shopping Trends  
-![Time of Day and Day of Week Shopping Trends](dayofweekpeopleshopmost.png) 
-![](timeofhourpeopleshop.png) 
-
-### Top 20 Reordered Products  
-![Top 20 Reordered Products](top20reordereditems.png)
-### Top 20 Products People Put In Their Cart First  
-![Top 20 Products People Put In Their Cart First](top20itemsfirst.png)  
+## Approach  
+1. **Data Cleaning**  
+   - Removed duplicates and handled missing values.  
+   - Normalized product names for consistency.  
+2. **Exploratory Data Analysis (EDA)**  
+   - Investigated ordering trends by time and day of the week.  
+   - Analyzed popular products, reorder behavior, and order sizes.  
+3. **Visualization**  
+   - Created bar charts, histograms, and pie charts to highlight key insights.
 
 ## Tools Used  
-- **Python**: Data analysis and manipulation.  
+- **Python**: Data manipulation and analysis.  
 - **Pandas**: Data cleaning and preprocessing.  
-- **Matplotlib**: Visualization of shopping patterns and trends.  
-- **NumPy**: Statistical and numerical computations.  
+- **NumPy**: Numerical computations.  
+- **Matplotlib**: Visualization of shopping patterns and trends.
+
+## Key Findings  
+1. **Popular Items**  
+   - Bananas are the most frequently purchased and first-added item.  
+   - Organic products dominate frequently reordered and first-added items, reflecting customer preference for fresh and organic produce.  
+2. **Shopping Patterns**  
+   - Peak shopping hours: 10 a.m. to 4 p.m.  
+   - Most popular shopping days: Sunday and Monday.  
+   - Common order frequencies: Weekly (7 days) and monthly (30 days).  
+3. **Reordering Trends**  
+   - High reorder rates for organic fruits and vegetables.  
+4. **Order Size Distribution**  
+   - Most orders contain 1–14 items, indicating smaller, frequent shopping trips.  
+5. **Customer Segmentation**  
+   - Diverse reorder percentages, with some customers reordering frequently (above 98%) and others rarely reordering.
+
+## Visuals  
+### Time of Day People Grocery Shop  
+![Time of Day Shopping](timeofhourpeopleshop.png)
+
+### Day of the Week Shopping Patterns  
+![Day of the Week](dayofweekpeopleshopmost.png)
+
+### Top 20 Most Popular Products  
+![Top Products](top20itemsfirst.png)
+
+## Recommendations  
+1. **Stocking and Inventory**  
+   - Focus on high-demand organic produce like bananas, spinach, and avocados.  
+2. **Optimized Delivery Slots**  
+   - Prioritize delivery options during peak hours (10 a.m.–4 p.m.) on popular days (Sunday and Monday).  
+3. **Customer Engagement**  
+   - Introduce loyalty programs for high-frequency customers.  
+   - Improve advertising strategies to convert low-frequency shoppers into regular customers.
 
 ## Future Improvements  
-- Explore shopping behavior segmented by customer demographics.  
-- Identify patterns in product pairings within single orders.  
-- Compare Instacart order patterns with other grocery delivery services.  
+- Analyze product pairings within single orders.  
+- Segment shopping patterns based on customer demographics.  
+- Compare Instacart order behavior with other grocery delivery services.
+
